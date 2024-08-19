@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../img/sea.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.icon{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50% , 0);
+    width: 100px;    
+    border-radius: 45%;
+}
+
+
+.login-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 70px 50px;
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 10px 0px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    opacity: 100%;
+    color: white;
+}
+
+.login-form .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.login-form .remember-me input {
+    margin-right: 20px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ba0000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #750101;
+}
+
+
+@media (max-width: 1025px){
+    .login-form {
+       width: 40%;
+    }
+}
+
+
+@media (max-width: 991px){
+    .login-form {
+        width: 50%;
+     }
+}
+
+
+@media (max-width: 767px){
+    .login-form {
+        width: 60%;
+     }
+}
+
+
